@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="google-site-verification" content="P52j2vMMCNUxOYQkeLRbBPgg1z5RTHInKsDTPLJEzd0" />
+		<meta name="keywords" content="MojiYomi,文字,ひらがな,カタカナ,アルファベット,かな,読み,書き,練習,ゲーム,アプリ,幼児,教育,子供,知育,無料"/>
+		<meta name="description" content="MojiYomiはひらがな、カタカナ、アルファベットの読み方、クリックの練習をすることを目的とした幼児,小児向け知育サイトです。"/>
+		<link rel="icon" href="./img/favicon.ico">
+		<link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
+		<title>ひらがな,カタカナ,アルファベット読み練習サイトの-MojiYomi:モジヨミ-</title>
+		<script type="text/javascript" src="./js/main.js"/></script>
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+	</head>
+
+	<!-- bodyここから -->
+	<body onContextmenu="return false">
+		<audio id="soundfile" preload="auto">
+			<source type="audio/mp3" src="./sounds/decision22.mp3">
+		</audio>
+		<!-- ヘッダー -->
+		<header class="cf common">
+			<div id="h_box">
+				<h1><a href="index.html"><img src="./img/top.png"/ alt="kanayomiロゴ"></a></h1>
+				<h2>- ひらがな・カタカナ・ABCの読み練習サイト MojiYomi -</h2>
+			</div><!-- /h_box -->
+		</header><!-- /header -->
+		<div id="snsbtn" class="cf common">
+				<a href="http://twitter.com/share?url=https%3a%2f%2fmojiyomi%2ecom%2f&text=%2d%20%e3%81%b2%e3%82%89%e3%81%8c%e3%81%aa%e3%83%bb%e3%82%ab%e3%82%bf%e3%82%ab%e3%83%8a%e3%83%bbABC%e3%81%ae%e8%aa%ad%e3%81%bf%e7%b7%b4%e7%bf%92%e3%82%b5%e3%82%a4%e3%83%88%20MojiYomi%20%2d" class="snslogo"><img src="./img/tweet.png" alt="twitter"></a>
+				<a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmojiyomi%2ecom%2f&" class="snslogo"><img src="./img/fb.png" alt="facebook"></a>
+		</div>
+		<!-- メインコンテンツ -->
+		<div id="main" class="cf common">
+
+			<div id="disp" class="cf">
+				<div class="obj" id="text"></div>
+			</div><!-- /disp -->
+
+			<!-- ボタン各種 -->
+			<div id="bt_area" class="cf">
+				<div id="btngroup1" class="cf">
+					<button type="button" class="obj" id="start">start<span id="bar"> / </span>next</button>
+				</div><!-- /btngroup1 -->
+				<div id="btngroup2" class="cf">
+					<button type="button" class="obj" id="back">back</button>
+					<button type="button" class="obj" id="random">rand</button>
+					<button type="button" class="obj" id="reset">reset</button>
+				</div><!-- /btngroup2 -->
+			</div><!-- /bt_area -->
+
+			<!-- セレクトボックス各種 -->
+			<div id="sel_area" class="cf">
+					<select class="obj" id="kana_type">
+						<option value="hira" selected>ひらがな</option>
+						<option value="d_hira">ひらがな(濁音)</option>
+						<option value="kata">カタカナ</option>
+						<option value="d_kata">カタカナ(濁音)</option>
+						<option value="l_abc">ABC(大文字)</option>
+						<option value="s_abc">abc(小文字)</option>
+						<option value="number">数字</option>
+					</select>
+					<select class="obj" id="color_type">
+						<option value="red">あか</option>
+						<option value="pink">ピンク</option>
+						<option value="blue">あお</option>
+						<option value="ltblue" selected>みずいろ</option>
+						<option value="yellow">きいろ</option>
+						<option value="orange">オレンジ</option>
+						<option value="green">みどり</option>
+						<option value="gray">はいいろ</option>
+					</select>
+					<select class="obj" id="sound">
+						<option value="on" selected>sound:on</option>
+						<option value="off">sound:off</option>
+					</select>
+			</div><!-- /sel_area -->
+		</div><!-- /main -->
+
+		<!-- サイト説明 -->
+		<div id="desc" class="common cf">
+			<h3 class="deschead">【 About this Site 】</h3>
+			<p>このサイトはひらがな、カタカナ、アルファベットの読み方、クリックの練習をすることを目的としたサイトです。<br/><br/>
+			<div class="ad">
+				<span id="adtxt">【スポンサーリンク】</span>
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- mojiyomi2 -->
+				<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7176486132594461" data-ad-slot="5207843933" data-ad-format="auto"></ins>
+				<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			</div><br/>
+			<p class="deschead">【 使い方 】</p>
+			<table>
+				<tr><td>start/next</td><td>スタートor１文字進める</td></tr>
+				<tr><td>back</td><td>１文字戻る</td><tr/>
+				<tr><td>rand</td><td>ランダムで表示</td><tr/>
+				<tr><td>reset</td><td>初めに戻る</td><tr/>
+				<tr><td>セレクトボックス</td><td>文字の種類, カラー, サウンドのOn/Off</td></tr>
+			</table><br/>
+			推奨ブラウザ: chrome, firefox, safari (IEは非推奨)<br/>
+			javascriptを使用していますので動かないときはブラウザの設定をonにしてください。<br/>
+		</div><!-- /desc -->
+
+		<!-- フッター -->
+		<footer class="cf common">
+			<div id="copy">
+				&copy2016 MojiYomi All rights reserved.
+			</div><!-- /copy -->
+			<div id="links" class="cf">
+				<a href="./index.html" id="top">トップへもどる</a>
+				<a href="./about.html" id="privacy">プライバシーポリシー</a>
+				<a href="https://ws.formzu.net/fgen/S49369564/" id="contact">お問い合わせ</a>
+			</div><!-- links -->
+		</footer><!-- /footer -->
+	</body>
+</html>
